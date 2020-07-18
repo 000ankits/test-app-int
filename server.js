@@ -9,7 +9,7 @@ const express = require('express'),
 dotenv.config({ path: './.env' });
 
 const dbConn = new Client({
-	connectionString : process.env.DBURL,
+	connectionString : process.env.DATABASE_URL,
 	ssl              : {
 		rejectUnauthorized : false
 	}
