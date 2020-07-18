@@ -41,33 +41,34 @@
     <div id="formDiv" class="contaner">
         <div class="row">
             <div class="col-12">
-                <div class="text-center pb-4">
-                    <h3>Register</h3>
+                <div class="text-center pb-5">
+                    <h3>Create Post</h3>
                 </div>
-                <form action="/register" method="POST">
+                <form action="/createPost" method="POST">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Username</label>
-                      <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1">Post Title</label>
+                        <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input name="pass" type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1">Image</label>
+                        <input name="img" type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Confirm Password</label>
-                      <input name="c_pass" type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1">Description</label>
+                        <input name="description" type="text" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Privacy Mode</label>
+                        <select name="privacy" class="form-control" id="exampleFormControlSelect1">
+                            <option value="private">private</option>
+                            <option value="public" selected>public</option>
+                        </select>
                     </div>
+
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                  </form>
-            </div>
+                </form>
         </div>
     </div>
 

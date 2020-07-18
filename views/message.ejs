@@ -16,9 +16,12 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="/gallery">Posts App</a>
-            </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/myposts">My Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/createPost">Add Post</a>
+                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -27,6 +30,10 @@
                 <li class="nav-item">
                 <a class="nav-link" href="/register">Register</a>
                 </li>
+                 
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">logout</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -34,7 +41,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h3><%= message %></h3>
+                <h3 class="pt-5"><%= message %></h3>
             </div>
         </div>
     </div>
