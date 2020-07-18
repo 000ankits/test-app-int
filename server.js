@@ -1,5 +1,16 @@
 const express = require('express'),
+	{ Client } = require('pg'),
+	dotenv = require('dotenv'),
 	app = express();
+
+dotenv.config({ path: './.env' });
+
+const dbConn = new Client({
+	connectionString : process.env.DBURL,
+	ssl              : {
+		rejectUnauthorized : false
+	}
+});
 
 app.use(express.static('public'));
 app.use(express.static('views'));
